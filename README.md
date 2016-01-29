@@ -1,4 +1,5 @@
 Blog Comments Crawler
+=====================
 
 
 What is it?
@@ -16,6 +17,7 @@ A good tutorial to follow is [this one](https://realpython.com/blog/python/web-s
 When scrapping the web, 2 kind of problems kind arise:
 - the target page is to slow to render because it uses a lot of javascript
 - the target page renders everything really fast but what you were interested in was something that disappears when the page is renderred
+
 To overcome these situations, one can deploy a tiy web-browser on a local machine
 that will render the pages at his will.
 This project uses Splash, on a local Docker container.
@@ -24,19 +26,33 @@ A good tutorial to follow is [this one](http://blog.scrapinghub.com/2015/03/02/h
 Folder structure
 --------------
 
---README.md                   The file you're looking at
---main.sh                     It calls the different jobs.
---get_posts.py                Called from main.sh. It takes care of MongoDB
---scrapy.cfg                  Nothing to report
---purseblog                   Folder create when running $scrapy startproject purseblog
-----settings.py               Here you set up Splash
-----pipelines.py              Nothing to report
-----items.py                  Nothing to report
-----__init__.py               Nothing to report
-----spiders                   The folder containing the crawlers
-------getDisqusUrl.py         The crawler in charge of the first job in main.sh
-------getJson.py              The crawler in charge of the second job in main.sh
-------__init__.py             Nothing to report
+README.md                   The file you're looking at
+
+main.sh                     It calls the different jobs.
+
+get_posts.py                Called from main.sh. It takes care of MongoDB
+
+scrapy.cfg                  Nothing to report
+
+purseblog                   Folder create when running $scrapy startproject purseblog
+
+* settings.py               Here you set up Splash
+
+* pipelines.py              Nothing to report
+
+* items.py                  Nothing to report
+
+* __init__.py               Nothing to report
+
+
+* spiders                   The folder containing the crawlers
+
+  * getDisqusUrl.py         The crawler in charge of the first job in main.sh
+
+  * getJson.py              The crawler in charge of the second job in main.sh
+
+  * __init__.py             Nothing to report
+
 
 Installation
 ------------
