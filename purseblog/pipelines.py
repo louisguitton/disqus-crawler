@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+'''
 # Define your item pipelines here
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
@@ -36,3 +36,4 @@ class MongoDBPipeline(object):
             log.msg("ThreadData added to MongoDB database!",
                     level=log.DEBUG, spider=spider)
         return item
+'''

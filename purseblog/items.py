@@ -7,11 +7,8 @@
 
 import scrapy
 
-
 class ThreadDataItem(scrapy.Item):
-    json = scrapy.Field()
-
-
+    # json = scrapy.Field()
 
 class DisqusUrlItem(scrapy.Item):
-    url = scrapy.Field()
+    # url = scrapy.Field()
