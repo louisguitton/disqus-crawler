@@ -15,8 +15,8 @@ SPIDER_MODULES = ['purseblog.spiders']
 NEWSPIDER_MODULE = 'purseblog.spiders'
 
 SPLASH_URL = 'http://localhost:8050/'
-DUPEFILTER_CLASS = 'scrapyjs.SplashAwareDupeFilter'
-HTTPCACHE_STORAGE = 'scrapyjs.SplashAwareFSCacheStorage'
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'purseblog (+http://www.yourdomain.com)'
@@ -53,7 +53,7 @@ HTTPCACHE_STORAGE = 'scrapyjs.SplashAwareFSCacheStorage'
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'scrapyjs.SplashMiddleware': 725,
+    'scrapy_splash.SplashMiddleware': 725,
 }
 
 # Enable or disable extensions

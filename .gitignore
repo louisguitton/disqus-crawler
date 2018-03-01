@@ -1,3 +1,5 @@
 thread.json
 url.txt
 *.pyc
+.ropeproject
+venv
