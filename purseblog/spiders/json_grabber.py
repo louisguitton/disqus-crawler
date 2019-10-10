@@ -24,5 +24,5 @@ class JsonGrabberSpider(scrapy.Spider):
         # response.xpath("//iframe[contains(@id,'dsq')]")
 
         filename = 'thread.json'
-        with open(filename, 'wb') as f:
+        with open(filename, 'w') as f:
             f.write(json)

@@ -40,5 +40,5 @@ class UrlGrabberSpider(scrapy.Spider):
 
         # Output to a file
         filename = 'url.txt'
-        with open(filename, 'wb') as f:
+        with open(filename, 'w') as f:
             f.write(url)
