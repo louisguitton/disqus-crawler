@@ -14,7 +14,7 @@ source venv/bin/activate
 pip install --upgrade -r requirements.txt
 ```
 
-## Usage example
+## Usage example
 
 - Open main.sh and change the url to the blog page you want to crawl
 - Make sure a mongod instance is running on your computer (Installation instructions for MongoDB are [here](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/))
