@@ -23,7 +23,7 @@ class UrlGrabberSpider(scrapy.Spider):
     # So we set the js_enabled parameter to False
     def start_requests(self):
         for url in self.start_urls:
-            body = json.dumps({"url": url, "wait": 0.5, "js_enabled": False })
+            body = json.dumps({"url": url, "wait": 0.5, "js_enabled": False})
             headers = Headers({'Content-Type': 'application/json'})
             yield scrapy.Request(RENDER_HTML_URL, self.parse, method="POST",
                                  body=body, headers=headers)
