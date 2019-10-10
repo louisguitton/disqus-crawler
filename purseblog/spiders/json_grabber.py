@@ -1,10 +1,6 @@
 # coding=utf-8
 import scrapy
 
-# Imports needed for talking to the Splash API
-import json
-from scrapy.http.headers import Headers
-
 # Define the Splash API endpoint
 RENDER_HTML_URL = "http://localhost:8050/render.html"
 
